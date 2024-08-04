@@ -1,0 +1,51 @@
+
+*{
+    color: #ced4da;
+    font-family: Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+}
+
+body{
+    overflow: hidden;
+}
+
+
+/*--------Animated background--------*/
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gradient {
+    --size: 800px;
+    --speed: 5s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(
+        rgba(55, 235, 169, 0.173),
+        #5b37eb36
+    );
+    animation: rotate var(--speed) var(--easing) alternate infinite;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    z-index: -1;
+}
+
+@media (min-width: 720px) {
+    .gradient {
+        --size: 1000px;
+    }
+}
+
+#gradient {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+}
