@@ -111,8 +111,42 @@
     width: 50%;
     object-fit: cover;
 }
+/* styles.css */
 
+.boxTitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 40px;
+}
 
+.headingOne {
+    font-size: 4rem;
+}
 
+.boxSkills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 40px;
+}
 
+.textSkills {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
+.boxAvatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxLeftBottom, 
+.boxRightBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
